@@ -6,7 +6,9 @@ background: '/img/posts/Rent/webscraping_bg.jpg'
 ---
 # Webscraping data from Immowelt
 
-<img src="img/posts/Rent/Immowelt.jpg" width="100%"></img>
+<img src="/img/posts/Rent/Immowelt.jpg" width="100%"></img>
+
+![Immowelt page](/img/posts/Rent/Immowelt.jpg)
 
 ## Afterwards fitting a regression model and visualising results with the plotly R package
 
