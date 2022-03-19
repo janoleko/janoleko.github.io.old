@@ -6,7 +6,7 @@ background: '/img/posts/Rent/webscraping_bg.jpg'
 ---
 # Webscraping data from Immowelt
 
-<img src="/img/posts/Rent/Immowelt.jpg" width="100%">
+<img src="/img/posts/Rent/immowelt-bg.png" width="100%">
 
 ![Immowelt page](/img/posts/Rent/Immowelt.jpg)
 
