@@ -4,11 +4,6 @@ title: "Webscraping Immowelt data"
 subtitle: "And creating an interactive 3D-Plot with the plotly R package"
 background: '/img/posts/Rent/BG Data.png'
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Webscraping data from Immowelt
 
 ## Afterwards fitting a regression model and visualising results with the plotly R package
