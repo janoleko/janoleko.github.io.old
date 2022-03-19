@@ -110,5 +110,5 @@ rentplot = plot_ly(x=x.seq, y=y.seq, z=z,
                       zaxis=list(title="Rent")))
 rentplot
 ```
-<iframe src="/img/posts/Rent/Rentplot1.html" width="100%" frameBorder="0"></iframe>
+<iframe src="/img/posts/Rent/Rentplot1.html" width="100%" height="60%"frameBorder="0"></iframe>
 
