@@ -6,6 +6,8 @@ background: '/img/posts/Rent/webscraping_bg.jpg'
 ---
 # Webscraping data from Immowelt
 
+<iframe src="img/posts/Rent/Immowelt.jpg" width="100%" frameBorder="0"></iframe>
+
 ## Afterwards fitting a regression model and visualising results with the plotly R package
 
 ### Scraping
