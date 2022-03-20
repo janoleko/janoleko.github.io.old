@@ -5,10 +5,6 @@ subtitle: "And creating an interactive 3D-Plot with the plotly R package"
 background: '/img/posts/Rent/webscraping_bg.jpg'
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```{r}
-
 # Webscraping data from Immowelt
 
 ![Immowelt page](/img/posts/Rent/immowelt-bg.jpg)
@@ -19,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Getting all the links for overview pages of Immowelt flats in Berlin:
 
-```{r}
+```r
 library(rvest)
 library(RSelenium)
 library(tidyverse)
@@ -56,7 +52,7 @@ for (i in 1:20){
 
 Scraping the flat data from the individual pages:
 
-```{r}
+```r
 flats_berlin = tribble(~kaltmiete, ~flaeche, ~zimmer)
 
 for (i in 1:length(all_links2)){
@@ -85,20 +81,20 @@ for (i in 1:length(all_links2)){
 }
 ```
 
-```{r}
+```r
 flats_berlin = flats_berlin[-which.max(flats_berlin$kaltmiete),]
 
 flats_berlin = drop_na(flats_berlin)
 ```
 
 Fitting a linear regression model:
-```{r}
+```r
 mod = lm(flats_berlin$kaltmiete~flats_berlin$flaeche + flats_berlin$zimmer + I(flats_berlin$flaeche^2) +
            I(flats_berlin$flaeche*flats_berlin$zimmer))
 ```
 
 Creating the plotly 3D-Plot:
-```{r}
+```r
 cf.mod = coef(mod)
 
 x.seq = seq(min(flats_berlin$flaeche),max(flats_berlin$flaeche), length.out=100)
