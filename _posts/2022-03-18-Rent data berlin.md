@@ -4,6 +4,11 @@ title: "Webscraping Immowelt data"
 subtitle: "And creating an interactive 3D-Plot with the plotly R package"
 background: '/img/posts/Rent/webscraping_bg.jpg'
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # Webscraping data from Immowelt
 
 ![Immowelt page](/img/posts/Rent/immowelt-bg.jpg)
