@@ -7,7 +7,7 @@ background: '/img/posts/Rent/webscraping_bg.jpg'
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
+```{r}
 
 # Webscraping data from Immowelt
 
